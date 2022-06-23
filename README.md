@@ -5,7 +5,7 @@ Estes documento README tem como objetivo fornecer as informações necessárias 
 
 Projeto: Lista de Moedas
 
-Você deve realizar um fork deste repositório e, ao finalizar, enviar o link do seu repositório para a nossa equipe (ti@coins.com.br). Lembre-se, NÃO é necessário criar um Pull Request para isso, nós iremos avaliar e retornar por email o resultado do seu teste.
+Você deve realizar um fork deste repositório e, ao finalizar, enviar o link do seu repositório para a nossa equipe . Lembre-se, NÃO é necessário criar um Pull Request para isso, nós iremos avaliar e retornar por email o resultado do seu teste.
 
 🖥 O que desenvolver?
 
