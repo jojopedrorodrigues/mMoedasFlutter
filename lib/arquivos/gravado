@@ -1,0 +1,70 @@
+SizedBox(
+              width: query.size.width - 22,
+              height: 100,
+              child: Card(
+                elevation: 5.0,
+                child: Column(
+                  children: [
+                    const Padding(padding: EdgeInsets.only(top: 5)),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Padding(padding: EdgeInsets.only(left: 22)),
+                        Text(
+                          moeda.simbolo,
+                          style: const TextStyle(color: Colors.green),
+                        ),
+                        const Padding(padding: EdgeInsets.only(left: 100)),
+                        Text(
+                          "1 " + moeda.nome,
+                          style: const TextStyle(
+                              color: Colors.black, fontWeight: FontWeight.w700),
+                        ),
+                      ],
+                    ),
+                    const Padding(padding: EdgeInsets.only(top: 10)),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Padding(padding: EdgeInsets.only(left: 22)),
+                        Opacity(
+                          opacity: 0.9,
+                          child: Container(
+                            width: 20,
+                            height: 20.0,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
+                                    fit: BoxFit.fill,
+                                    image: NetworkImage(
+                                        moeda.imagemUrl.toString()))),
+                          ),
+                        ),
+                        const Padding(padding: EdgeInsets.only(left: 111)),
+                        Text(
+                          moeda.cotacao,
+                          style: const TextStyle(color: Colors.black, fontSize: 14),
+                        ),
+                      ],
+                    ),
+                    const Padding(padding: EdgeInsets.only(top: 8)),
+                    Expanded(
+                        child: Container(
+                      color: Colors.black,
+                      width: query.size.width,
+                      height: 20,
+                      child: RaisedButton(
+                        color: Colors.black,
+                        elevation: 2,
+                        focusElevation: 4,
+                        hoverElevation: 4,
+                        highlightElevation: 8,
+                        disabledElevation: 1,
+                        onPressed: () {modalInfo.modal(context, moeda);},
+                        child: const Text('Detalhes', style: TextStyle(color: Colors.white),),
+                      ),
+                    ))
+                  ],
+                ),
+              ),
+            )
