@@ -133,7 +133,7 @@ class _ScreenState extends State<Screen> {
                       itemBuilder: ((context, index) {
                         return SizedBox(
                           width: query.size.width - 22,
-                          height: 100,
+                          height: 160,
                           child: Padding(
 														padding: const EdgeInsets.all(22),
 														child: Card(
